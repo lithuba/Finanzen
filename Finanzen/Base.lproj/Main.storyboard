@@ -28,23 +28,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7y-Vb-Lfg">
-                                <rect key="frame" x="164.5" y="67" width="46" height="68"/>
+                                <rect key="frame" x="36" y="466" width="46" height="68"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQU-Mu-ke2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqh-U4-bCd">
+                                <rect key="frame" x="16" y="416" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyJ-Xb-6m1">
+                                <rect key="frame" x="262" y="416" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pDI-is-nzI">
+                                <rect key="frame" x="139" y="416" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ergebnis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-NM-p4R">
+                                <rect key="frame" x="36" y="141" width="323" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="h7y-Vb-Lfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bp5-Ag-0NK"/>
-                            <constraint firstItem="h7y-Vb-Lfg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="Emd-Dg-FrO"/>
-                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="YUw-bk-tWH"/>
-                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mQc-Nr-DFx"/>
-                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oDP-CW-mKe"/>
+                            <constraint firstItem="h7y-Vb-Lfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-128.5" id="Bp5-Ag-0NK"/>
+                            <constraint firstItem="h7y-Vb-Lfg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="446" id="Emd-Dg-FrO"/>
+                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="YUw-bk-tWH"/>
+                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="mQc-Nr-DFx"/>
+                            <constraint firstItem="6f4-Pb-Xk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="oDP-CW-mKe"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ergebnis" destination="9Y8-NM-p4R" id="xXS-RH-pPm"/>
+                        <outlet property="essenfeld" destination="Cqh-U4-bCd" id="TkA-3m-mUz"/>
+                        <outlet property="essengesamtfeld" destination="pDI-is-nzI" id="3gu-bQ-1Bh"/>
                         <outlet property="toplabel" destination="6f4-Pb-Xk1" id="tm2-9K-dcm"/>
                     </connections>
                 </viewController>

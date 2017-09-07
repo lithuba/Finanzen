@@ -12,14 +12,28 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var toplabel: UILabel!
     
+    @IBOutlet weak var ergebnis: UILabel!
     
     @IBAction func button1(_ sender: Any) {
         
-        toplabel.text = "Hello"
-        print("button tapped")
+        ergebnis.text = "Es wurden \(Double (essenfeld.text!)!)€ fuer Essen ausgegeben"
+        
         
         
     }
+    
+    
+    @IBOutlet weak var essenfeld: UITextField!
+    
+    @IBOutlet weak var essengesamtfeld: UITextField!
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +48,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
 
 }
 
